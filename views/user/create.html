@@ -1,0 +1,13 @@
+﻿<div>
+    <h6>Add User</h6>
+    First Name: <input type="text" ng-model="user.firstName"><br>
+    Last Name: <input type="text" ng-model="user.lastName"><br>
+    <br>
+    Full Name: {{user.fullName()}}
+    <br/>
+    <input type="button" value="Add" ng-click="create()" />
+    <br/>
+    <ul>
+        <li ng-repeat="u in userList">{{u}}</li>
+    </ul>
+</div>

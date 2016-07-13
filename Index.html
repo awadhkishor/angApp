@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="scripts/vendor/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/filters/routing.js"></script>
+    <script src="scripts/services/commonService.js"></script>
+
+    <script src="scripts/controllers/userController.js"></script>
+</head>
+<body ng-app="myApp">
+    <div ng-include="'views/shared/Header.html'"></div>
+    <div ng-view>
+        <span>dynamic content will be here</span>
+    </div>
+    <div ng-include="'views/shared/Footer.html'"></div>
+</body>
+</html>
